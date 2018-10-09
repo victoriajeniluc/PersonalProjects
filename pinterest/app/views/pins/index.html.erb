@@ -1,25 +1,25 @@
-<p id="notice"><%= notice %></p>
 
-<div class = "row pinterest-grid">
-  <% @pins.each do |pin| %>
-    <div class = "col-md-5 pin-item">
-      <div class ="card card-default pin">
-        <div class="card-body">
-          <%= link_to pin_path(pin) do %>
-            <%= image_tag pin.image, style: 'height:100%;width:auto;'%>
-          <% end %>   
+  <p id="notice"><%= notice %></p>
+
+  <div class ="grid"> 
+   <% @pins.each do |pin| %>
+    <div class = "grid-sizer">
+        <div class ="grid-item">
+          <div class = "grid-item grid-item--width2"> 
+            <%= link_to pin_path(pin) do %>
+              <%= image_tag pin.image %>
+             <% end %>   
+          </div>
         </div>
-        <div class ="panel-footer"> 
-          <p><%= pin.title %></p>
-            <div><%= link_to 'Edit', edit_pin_path(pin) %> | <%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
-            </div>
+          <div class ="panel-footer"> 
+            <p><%= pin.title %></p>
+              <div><%= link_to 'Edit', edit_pin_path(pin) %> | <%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+              </div>
+          </div>
         </div>
-      </div>
-    </div>
-  <% end %> 
-</div>
-
-
+       </div>
+    <% end %> 
+  </div>
 
 
 

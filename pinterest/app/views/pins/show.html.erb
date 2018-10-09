@@ -1,28 +1,23 @@
-<p id="notice"><%= notice %></p>
+<div id ="pin_show"> 
+	<div class="panel-body">
+		<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @pin.title %>
-</p>
+		<p>
+	  	<h1 class="title"><%= @pin.title %></h1>  	
+		</p>
+		<div class = "pin_image">
+			<%= image_tag(@pin.image) %> 
+		</div>
+	
+		<p>
+		  <div class="description"><%= @pin.description %></div>
+		</p>
 
-<div>
-	<%= image_tag(@pin.image, style: "width:25%") %> 
+		<p>
+		  <strong>Created on:</strong>
+		  <%= @pin.created_on %>
+		</p>
+		<%= link_to 'Edit', edit_pin_path(@pin) %> |
+		<%= link_to 'Back', pins_path %>
+	</div>	
 </div>
-
-<p>
-  <strong>Description:</strong>
-  <%= @pin.description %>
-</p>
-
-<p>
-  <strong>Created on:</strong>
-  <%= @pin.created_on %>
-</p>
-
-<p>
-  <strong>Updated on:</strong>
-  <%= @pin.updated_on %>
-</p>
-
-<%= link_to 'Edit', edit_pin_path(@pin) %> |
-<%= link_to 'Back', pins_path %>

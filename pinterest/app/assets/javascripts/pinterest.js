@@ -1,4 +1,5 @@
-$('.pinterest-grid').masonry({
-	itemSelector: '.pin-item',
-	columnWidth: 200
+$('.grid').masonry({
+	itemSelector: '.grid-item',
+	columnWidth: '.grid-sizer',
+	percentPosition: true 
 });
