@@ -1,0 +1,15 @@
+body {
+	padding-top: 75px;
+}
+
+.card-body {
+	padding: 0px;
+}
+
+.pin img {
+	width: 100%;
+}
+
+.pin-item {
+	width: 200px;
+}

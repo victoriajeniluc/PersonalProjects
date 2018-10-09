@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<div class = "row">
+<div class = "row pinterest-grid">
   <% @pins.each do |pin| %>
-    <div class = "col-md-3">
-      <div class ="card card-default">
+    <div class = "col-md-5 pin-item">
+      <div class ="card card-default pin">
         <div class="card-body">
           <%= link_to pin_path(pin) do %>
-            <%= image_tag pin.image, size: "262x350", class: "img_responsive"%>
+            <%= image_tag pin.image, style: 'height:100%;width:auto;'%>
           <% end %>   
         </div>
         <div class ="panel-footer"> 
