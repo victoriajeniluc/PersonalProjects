@@ -47,12 +47,17 @@ nav {
 
 	-moz-column-count: 3; 
 	-webkit-column-count: 3;
-	column-count: 3; 
+	column-count: 3;
+
+	-moz-column-gap: 10px; 
+	-webkit-column-gap: 10px;
+	column-gap: 10px; 
 
 	.grid-item{ 
 		display: inline-block;
 		box-shadow: 0 1px 3px rgba(0,0,0, .12), 0 1px 2px rgba(0,0,0, .24);
 		padding: 10px; 
+		margin-bottom: 10px; 
 	}
 
 	.item-picture img {
