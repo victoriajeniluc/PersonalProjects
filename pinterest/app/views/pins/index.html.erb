@@ -12,8 +12,10 @@
 
           <div class ="item-footer"> 
             <p><%= pin.title %></p>
+              <% if check_user(current_user, pin) %> 
               <div><%= link_to 'Edit', edit_pin_path(pin) %> | <%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
               </div>
+              <% end %> 
           </div>
       </div>
     <% end %> 

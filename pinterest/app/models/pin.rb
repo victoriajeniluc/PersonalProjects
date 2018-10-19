@@ -6,7 +6,7 @@ class Pin < ApplicationRecord
 
 	def image_validation
 		if !image.attached?
-			errors[:base] << "NEEDS A PICTURE TO THIS!"
+			errors[:base] << "Please add a picture to this!"
 		end 
 	end 
 end

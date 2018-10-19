@@ -68,7 +68,6 @@ class PinsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_pin
        @pin = Pin.find_by(id: params[:id])
-
       redirect_to pins_path, notice: "There is no such pin as that!" if @pin.nil? 
     end
 

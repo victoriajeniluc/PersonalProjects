@@ -38,7 +38,6 @@ ActiveRecord::Schema.define(version: 2018_09_27_034340) do
     t.text "description"
     t.datetime "created_on"
     t.datetime "updated_on"
-    t.integer "likes", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"

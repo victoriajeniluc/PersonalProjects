@@ -14,14 +14,12 @@
 		</p>
 
 		<p>
-		  <div class="description"><%= @pin.likes %></div>
-		</p>
-
-		<p>
 		  <strong>Created on:</strong>
 		  <%= @pin.created_on %>
 		</p>
-		<%= link_to 'Edit', edit_pin_path(@pin) %> |
-		<%= link_to 'Back', pins_path %>
+		<% if check_user(current_user, @pin) %> 
+			<%= link_to 'Edit', edit_pin_path(@pin) %> |
+			<%= link_to 'Back', pins_path %>
+		<% end %> 
 	</div>	
 </div>

@@ -5,7 +5,6 @@ class CreatePins < ActiveRecord::Migration[5.1]
       t.text :description
       t.timestamp :created_on
       t.timestamp :updated_on
-      t.integer :likes, default: 0 
 
       t.timestamps
     end
