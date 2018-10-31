@@ -14,11 +14,10 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
-
- body {
-	background: light-pink;
+.banner {
+	display: flex;
+	justify-content: center;
 }
-
 
 nav {
 	margin: 5%;
