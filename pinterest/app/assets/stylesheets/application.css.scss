@@ -15,12 +15,16 @@
  @import "bootstrap";
 
 .banner {
+	top: 50px;
 	display: flex;
 	justify-content: center;
+	position: relative; 
 }
 
 nav {
-	margin: 5%;
+	display: inline-block;
+	position: absolute; 
+	top: 20px;
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
 	.navbar-brand {
 		a {
